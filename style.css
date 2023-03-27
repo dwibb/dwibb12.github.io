@@ -511,7 +511,7 @@ body{
     }
     .callactive{
         display: block;
-        width: 150px;
+        width: fit-content;
     }
     .call ul{
         list-style: none;
@@ -531,6 +531,7 @@ body{
         text-decoration: none;
         color: rgb(255, 255, 255);
         font-size: 14px;
+        margin: 0 10px;
     }
     .contcall1{
         text-align: center;
