@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+
 }
 p{
     margin: 0;
@@ -62,6 +64,7 @@ body{
     font-size: 18px;
     text-decoration: none;
     color: #1e1e63;
+
 }
 .menuc ul li a:hover{
     color: #0b0b48;
@@ -318,6 +321,9 @@ body{
     font-size: 10px;
 }
 
+.contcall{
+    display: none;
+}
 
 @media screen and (max-width: 900px) {
     .header{
@@ -362,7 +368,6 @@ body{
         margin-top: 20px;
         padding: 5px 0px 10px 5px;
         background-color: rgba(255, 255, 255, 0.665);
-        
         order: 3;
     }
     .active{
@@ -487,5 +492,58 @@ body{
    .cont5{
     padding: 0;
     margin: 2% 10%;
-}
+    }
+
+    .contcall{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        position: fixed;
+        bottom: 10px;
+        left: 0px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .call{
+        display: none;
+    }
+    .callactive{
+        display: block;
+        width: 120px;
+    }
+    .call ul{
+        list-style: none;
+
+    }
+    .call ul li{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        padding: 3px;
+        box-sizing: border-box;
+        background-color: rgba(30, 47, 62, 0.859);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .call ul li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+    }
+    .contcall1{
+        text-align: center;
+        width: 80px;
+        height: 22px;
+        cursor: pointer;
+        background-color: #1e1e63df;
+        border-radius: 5px;
+        position: sticky;
+        bottom: 10px;
+        
+    }
+    .contcall1 p{
+        color: #ffffff;
+    }
 }
